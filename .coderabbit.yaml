@@ -35,7 +35,7 @@ reviews:
     base_branches:
       - "main"
     ignore_title_keywords:
-      - "WIP"
-      - "DO NOT REVIEW"
+      - "[WIP]"
+      - "[DO NOT REVIEW]"
 chat:
   auto_reply: true
