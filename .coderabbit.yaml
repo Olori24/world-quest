@@ -1,0 +1,41 @@
+# CodeRabbit configuration for WORLD QUEST
+# https://docs.coderabbit.ai/
+
+reviews:
+  profile: chill
+  request_changes_workflow: false
+  high_level_summary: true
+  review_status: true
+  poem: false
+  collapse_walkthrough: false
+  path_filters:
+    - "!**/*.lock"
+    - "!**/dist/**"
+    - "!**/build/**"
+    - "!**/.next/**"
+    - "!**/coverage/**"
+    - "!**/node_modules/**"
+  path_instructions:
+    - path: "**"
+      instructions: |
+        Review WORLD QUEST as a mobile-first multiplayer adventure and earning-game project.
+        Prioritize correctness, security, privacy, abuse prevention, accessibility,
+        mobile responsiveness, performance, and maintainability.
+        Treat all player balances, rewards, purchases, inventory, trading, and progression
+        as server-authoritative. Flag client-side trust, exploitable reward loops,
+        race conditions, duplicate transaction handling, insecure Supabase policies,
+        leaked secrets, unsafe user-generated content, and missing validation.
+        Do not recommend real-money wagering or misleading earning claims.
+        Preserve existing Supabase data and migrations; flag destructive schema changes.
+        For game UI, check Android touch behavior, loading/error/empty states, and
+        keyboard/screen-reader accessibility.
+  auto_review:
+    enabled: true
+    drafts: false
+    base_branches:
+      - "main"
+    ignore_title_keywords:
+      - "[WIP]"
+      - "[DO NOT REVIEW]"
+chat:
+  auto_reply: true
