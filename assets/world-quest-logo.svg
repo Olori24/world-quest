@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+<title id="title">WORLD QUEST</title><desc id="desc">A globe crossed by a quest path and star.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#151b4b"/><stop offset="1" stop-color="#39206f"/></linearGradient><linearGradient id="globe" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5ee7ff"/><stop offset="1" stop-color="#6b73ff"/></linearGradient></defs>
+<rect width="512" height="512" rx="104" fill="url(#bg)"/>
+<circle cx="256" cy="208" r="139" fill="url(#globe)" stroke="#eafaff" stroke-width="9"/>
+<ellipse cx="256" cy="208" rx="62" ry="139" fill="none" stroke="#eafaff" stroke-width="7" opacity=".72"/>
+<ellipse cx="256" cy="208" rx="139" ry="52" fill="none" stroke="#eafaff" stroke-width="7" opacity=".72"/>
+<path d="M139 280 C192 236 228 258 270 218 S342 168 370 126" fill="none" stroke="#ffd166" stroke-width="14" stroke-linecap="round" stroke-dasharray="2 22"/>
+<circle cx="139" cy="280" r="17" fill="#ffd166" stroke="#fff" stroke-width="6"/>
+<path d="M370 92 l17 34 38 5-28 26 7 38-34-19-34 19 7-38-28-26 38-5z" fill="#ffd166" stroke="#fff4d6" stroke-width="5" stroke-linejoin="round"/>
+<text x="256" y="405" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="47" font-weight="900" letter-spacing="2" fill="#fff">WORLD</text>
+<text x="256" y="458" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="47" font-weight="900" letter-spacing="5" fill="#ffd166">QUEST</text>
+</svg>
