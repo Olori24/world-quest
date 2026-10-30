@@ -1,10 +1,26 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#101c2e"><meta name="description" content="Explore cities, complete quests, and earn virtual rewards in WORLD QUEST."><title>WORLD QUEST — Global Adventure</title><link rel="stylesheet" href="./styles.css"></head>
-<body><main class="app"><header><div><p class="eyebrow">WORLD QUEST</p><h1>Global Adventure</h1><p class="sub">Explore. Build. Compete.</p></div><div class="wallet"><span>VIRTUAL QUEST COINS</span><strong id="coins">250</strong></div></header>
-<section class="hero"><div><span class="pill">LAGOS · NIGERIA</span><h2>Your next adventure<br><em>starts here.</em></h2><p>Complete missions, discover cities, and grow your reputation.</p><button id="travel">Explore destination <span>↗</span></button></div><div class="orb" aria-hidden="true"><span>WQ</span></div></section>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#101c2e">
+<meta name="description" content="Explore cities, complete quests, and earn virtual rewards in WORLD QUEST.">
+<title>WORLD QUEST — Global Adventure</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<main class="app">
+<header><div><p class="eyebrow">WORLD QUEST / SEASON 01</p><h1>Global Adventure</h1><p class="sub">Explore. Build. Compete.</p></div><div class="wallet"><span>VIRTUAL QUEST COINS</span><strong id="coins">250</strong></div></header>
+<section class="hero"><div><span class="pill" id="heroCity">LAGOS · NIGERIA</span><h2>The world is yours<br><em>to discover.</em></h2><p>Move through the world, unlock cities, finish missions, and build your legend.</p><button id="travel">Start exploring <span>↗</span></button></div><div class="orb" aria-hidden="true"><span>WQ</span></div></section>
 <section class="stats"><article><span>LEVEL</span><b id="level">1</b></article><article><span>XP</span><b id="xp">0 / 100</b></article><article><span>REPUTATION</span><b id="rep">Rookie</b></article></section>
+<section class="section world"><div class="section-head"><div><p class="eyebrow">LIVE WORLD</p><h2>Explore the map</h2><p class="sub">Use WASD / arrow keys or the mobile controls.</p></div><span class="location" id="location">Lagos</span></div><canvas id="worldMap" width="900" height="420" aria-label="Interactive world grid map"></canvas><p id="moveAnnouncement" class="sub" aria-live="polite" aria-atomic="true"></p><div class="controls"><button data-move="0,-1" aria-label="Move north">↑</button><button data-move="-1,0" aria-label="Move west">←</button><button data-move="0,1" aria-label="Move south">↓</button><button data-move="1,0" aria-label="Move east">→</button><span>Position <b id="playerPos">2, 2</b></span></div></section>
 <section class="section"><div class="section-head"><div><p class="eyebrow">YOUR JOURNEY</p><h2>Available missions</h2></div><span id="count">0 completed</span></div><div class="missions" id="missions"></div></section>
-<section class="section cities"><div class="section-head"><div><p class="eyebrow">WORLD MAP</p><h2>Choose your destination</h2></div></div><div class="city-grid" id="cityGrid"></div></section>
-<section class="section"><div class="section-head"><div><p class="eyebrow">PLAYER PROGRESS</p><h2>Daily expedition</h2></div></div><button id="daily">Claim daily bonus · +50 coins</button><p class="sub">Daily login bonus and streak progress are saved on this device.</section>
-<section class="section"><div class="section-head"><div><p class="eyebrow">ADVENTURE LOG</p><h2>Field journal</h2></div></div><div id="journal"><p class="sub">Your discoveries will appear here.</p></div></section>
-<footer><span>WORLD QUEST</span><span>Virtual coins have no cash value · Adventure awaits.</span></footer></main><div id="toast" role="status" aria-live="polite"></div><script src="./game.js"></script></body></html>
+<section class="section cities"><div class="section-head"><div><p class="eyebrow">DESTINATION BOARD</p><h2>Choose a city</h2></div></div><div class="city-grid" id="cityGrid"></div></section>
+<section class="section"><div class="section-head"><div><p class="eyebrow">PLAYER PROGRESS</p><h2>Daily expedition</h2></div><button id="daily">Claim daily bonus · +50 coins</button><p class="sub">Progress is currently saved on this device. Virtual coins have no cash value.</p></section>
+<section class="section"><div class="section-head"><div><p class="eyebrow">ADVENTURE LOG</p><h2>Field journal</h2></div><div id="journal"></div></section>
+<footer><span>WORLD QUEST</span><span>Virtual coins only · No cash value</span></footer>
+</main>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="./game.js"></script>
+</body>
+</html>
